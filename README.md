@@ -1,4 +1,12 @@
 # VanitySearch
+A small modification of [VanitySearch](https://github.com/kanhavishva/VanitySearch)</br>
+Added private key random between minimum and maximum hash values. </br>
+
+Example for CPU</br>
+Run: ```VanitySearch.exe -t 6 -bit 64 -r 100 -min 9000000000000000 -max a000000000000000 -o Found.txt 16jY7```</br>
+
+Example for GPU</br>
+Run: ```VanitySearch.exe -bit 64 -gpu -r 50000 -min 7000000000000000 -max 9000000000000000 -o Found.txt 16jY7```</br>
 
 VanitySearch is a bitcoin address prefix finder. If you want to generate safe private keys, use the -s option to enter your passphrase which will be used for generating a base key as for BIP38 standard (*VanitySearch.exe -s "My PassPhrase" 1MyPrefix*). You can also use *VanitySearch.exe -ps "My PassPhrase"* which will add a crypto secure seed to your passphrase.\
 VanitySearch may not compute a good grid size for your GPU, so try different values using -g option in order to get the best performances. If you want to use GPUs and CPUs together, you may have best performances by keeping one CPU core for handling GPU(s)/CPU exchanges (use -t option to set the number of CPU threads).
