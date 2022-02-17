@@ -342,7 +342,7 @@ As you can see, even with a competitive hardware, it is very unlikely that you f
 
 ## Windows
 
-Intall CUDA SDK and open VanitySearch.sln in Visual C++ 2017.\
+Intall CUDA SDK and open VanitySearch.sln in Microsoft Visual Studio Community 2019
 You may need to reset your *Windows SDK version* in project properties.\
 In Build->Configuration Manager, select the *Release* configuration.\
 Build and enjoy.\
